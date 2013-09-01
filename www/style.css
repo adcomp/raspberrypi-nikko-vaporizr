@@ -1,0 +1,50 @@
+body { text-align: center; }
+
+header { 
+	font-family: sans-serif, monospace; 
+	vertical-align: middle;
+	background: #262626;
+	border-bottom: 4px solid #bd1143;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+
+header h1 {
+	color: white; 
+	font-size: 32px;
+	margin: 0;
+}
+
+header h2 {
+	font-size: 18px;
+	color: #444;
+}
+
+#input, #output { display: none;}
+
+.bt { 
+	display: inline-block; 
+	width: 96px; height: 96px; 
+	border: 3px solid black;
+	border-radius: 4px;
+	background: #333; 
+	color: #999;
+	font-family: sans-serif, monospace;
+	font-size: 12px;
+	margin : 8px;
+}
+
+.bt div {
+	font-size: 26px;
+	margin-top: 6px;
+}
+
+#host { 
+	background: #bd1143;
+	border: 3px solid black;
+	border-radius: 4px;
+	padding: 4px;
+	color: white; 
+	font-size: 18px;
+	font-family: monospace; 
+}
