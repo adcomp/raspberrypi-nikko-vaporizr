@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Rpi Car Remote</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="ws_client.js"></script>
+  </head>
+ 
+<body>
+
+	<header>
+		<h1>Raspberry Pi</h1>
+		<h2>Nikko VaporizR Remote</h2>
+	</header>
+
+	<div id="con_div">
+	  <label for="host">Host :</label>
+	  <input type="text" id="host" value="192.168.0.3" />
+	  <input type="button" id="connect" value="connect" onclick='connect()' />
+	</div>
+
+  <div id="output">
+    <h2>Output</h2>
+    
+    <div>
+    <div id="bt_LEFT_FORWARD" class="bt" onclick="ws.send('LEFT_FORWARD')"></div>
+    <div id="bt_FORWARD" class="bt" onclick="ws.send('FORWARD')"></div>
+    <div id="bt_RIGHT_FORWARD" class="bt" onclick="ws.send('RIGHT_FORWARD')"></div>
+    </div>
+    <div>
+    <div id="bt_LEFT_DONUT" class="bt" onclick="ws.send('LEFT_DONUT')"></div>
+    <div id="bt_LIGHT" class="bt" onclick="ws.send('LIGHT')"></div>
+    <div id="bt_RIGHT_DONUT" class="bt" onclick="ws.send('RIGHT_DONUT')"></div>
+    </div>
+    <div>
+    <div id="bt_LEFT_BACK" class="bt" onclick="ws.send('LEFT_BACK')"></div>
+    <div id="bt_BACK" class="bt" onclick="ws.send('BACK')"></div>
+    <div id="bt_RIGHT_BACK" class="bt" onclick="ws.send('RIGHT_BACK')"></div>
+    </div>
+  </div>
+
+</body>
+</html>
+
